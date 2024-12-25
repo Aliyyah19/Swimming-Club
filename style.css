@@ -1,7 +1,8 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
+    font-family: 'Kumbh Sans', sans-serif
 }
 .main{
     width: 100%;
@@ -14,6 +15,8 @@ nav{
     display: flex;
     align-items: center;
     background-color: white;
+    position: sticky;
+    z-index:999;
 }
 .logo{
     flex-basis: 10%;
@@ -35,20 +38,4 @@ nav{
     color: #026dfa;
     font-size:x-large;
 
-}
-.information {
-    width: 1000px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: -10%;
-    transform: translateY(-50%);
-}
-.circle {
-    width: 1000px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
 }
