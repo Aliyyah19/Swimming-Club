@@ -4,18 +4,38 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
-    background-color: #bad8ed;
+    background-color: #deedf8;
+    overflow: auto; /* Allow scrolling */
+    height: auto;   /* Ensure height is not constrained */
 }
+.button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    background-color: #46728e;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #101f29;
+    /* Change background on hover */
+    color: white;
+    /* Ensure text color stays visible */
+}
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+/* Header */ 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
-.logo img {
-    max-width: 100px;
-    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .navbar ul {
     display: flex;
@@ -28,18 +48,33 @@ nav {
 .navbar li {
     margin: 0 10px; /* Space between buttons */
 }
-/* Navbar list items attributes */
-.navbar a {
-    display: inline-block; 
-    color: white; 
-    background-color: #285978; 
-    padding: 10px 20px; 
-    border-radius: 50px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from nav */
-    font-weight: 550; /* Bold text */
-    transition: 0.3s ; /* Smooth hover effect */
+section {
+    padding: 4.5rem 0 1.5rem;
+    display:block;
 }
-.navbar a:hover {
-    background-color: #101f29; /* Change background on hover */
-    color: white; /* Ensure text color stays visible */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, white, #46728e);
 }
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #46728e;
+    margin-bottom: 1rem;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: #46728e;
+    margin-bottom: 3rem;
+}
+.hero-section .hero-image {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+   
