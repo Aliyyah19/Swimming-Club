@@ -7,5 +7,5 @@ function moveSlide(direction) {
     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Auto-slide (Optional)
+
 setInterval(() => moveSlide(1), 5000); // Change slide every 5 seconds
