@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -7,12 +8,13 @@
     <title>Swimming Club Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header -->
-    <div class="main">  
+    <header class="main-header">
         <nav>
             <div class="logo">
-                <img src="logo1.png">
+                <img src="logo1.png" alt="Swimming Club Logo">
             </div>
             <div class="navbar">
                 <ul>
@@ -24,29 +26,37 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </header>
+
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Welcome to our Swimming Club!</h1>
+        <h1>Welcome to Our Swimming Club!</h1>
         <p>Join us to improve your swimming skills and enjoy our facilities.</p>
-        <a href="membership.html" class="button">JOIN US</a>
+        <a href="membership.html" class="button">Join Us</a>
         <div class="hero-image">
             <img src="hero-image.jpg" alt="Swimming Club">
         </div>
     </section>
 
-    <!-- About Us Page -->
+    <!-- About Us Section -->
     <section class="aboutus">
-        <h1>About Us</h1>
-        <p>We are a group of enthusiastic swimmers who are passionate about helping others improve their swimming skills.</p>
-        <button>LEARN MORE</button>
+        <div class="content">
+            <h1>About Us</h1>
+            <p>We are a group of enthusiastic swimmers passionate about helping others improve their swimming skills.
+                Whether you're a beginner or advanced swimmer, we have something for everyone.</p>
+            <a href="aboutus.html" class="button">Learn More</a>
+        </div>
     </section>
-    <!-- Membership Page -->
+
+    <!-- Membership Section -->
     <section class="membership" id="membership">
-        <h1>Membership</h1>
-        <p>Become a member of our club and enjoy exclusive benefits and perks.</p>
-        <button>JOIN NOW</button>       
+        <div class="content">
+            <h1>Membership</h1>
+            <p>Become a member of our club and enjoy exclusive benefits, including access to professional trainers,
+                state-of-the-art facilities, and community events.</p>
+            <a href="membership.html" class="button">Join Now</a>
+        </div>
     </section>
-    
 </body>
+
 </html>
