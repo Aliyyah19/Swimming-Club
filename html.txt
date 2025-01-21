@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to our Swimming Club. Join us to improve your swimming skills and enjoy our facilities.">
+    <title>Swimming Club Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                <img src="logo1.png" alt="Swimming Club Logo">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="home.html" class="button">Home</a></li>
+                    <li><a href="aboutus.html" class="button">About</a></li>
+                    <li><a href="membership.html" class="button">Membership</a></li>
+                    <li><a href="gallery.html" class="button">Gallery</a></li>
+                    <li><a href="contact.html" class="button">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to our Swimming Club!</h1>
+        <p>Join us to improve your swimming skills and enjoy our facilities.</p>
+        <a href="membership.html" class="button">JOIN US</a>
+        <div class="hero-image">
+            <img src="hero-image.jpg" alt="Swimming Club">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="aboutus">
+        <h2>About Us</h2>
+        <p>We are a group of enthusiastic swimmers who are passionate about helping others improve their swimming skills.</p>
+        <a href="aboutus.html" class="button">LEARN MORE</a>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <h2>Membership</h2>
+        <p>Become a member of our club and enjoy exclusive benefits and perks.</p>
+        <a href="membership.html" class="button">JOIN NOW</a>       
+    </section>
+</body>
+</html>
