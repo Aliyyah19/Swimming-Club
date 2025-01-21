@@ -34,7 +34,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.section-button {
+.hero-button {
     display: inline-block;
     padding: 0.7rem 2rem;
     border-radius: 50px;
@@ -46,7 +46,20 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.section-button:hover,
+.aboutus-button,
+.member-button {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    background-color: rgb(20, 156, 201);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover,.aboutus-button:hover,.member-button:hover,
 .button:hover {
     color: white;
     background-color: rgb(20, 156, 201);
@@ -54,11 +67,16 @@ body {
 
 /* Header */
 .main-header {
-    background: rgb(249, 249, 249);
+    background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
+/* Navbar Container */
 nav {
     display: flex;
     justify-content: space-between;
@@ -67,25 +85,35 @@ nav {
     margin: 0 auto;
 }
 
+/* Logo */
 .logo img {
     max-width: 150px;
+    height: auto;
 }
 
+/* Navbar List */
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar Links */
 .navbar a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(20, 156, 201);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hero Section */
 .hero-section {
+    margin-top: 4rem;
     text-align: center;
-    margin: 3rem 3rem;
 }
 
 .hero-section h1 {
@@ -97,7 +125,6 @@ nav {
 
 .hero-section p {
     color: #c8e7ea;
-    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -137,7 +164,6 @@ section {
 .membership p {
     margin-bottom: 2rem;
     color: #555;
-    font-size: 2rem;
 }
 
 /* Slider Container */
@@ -177,7 +203,7 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 1.5rem;
     border-radius: 50%;
