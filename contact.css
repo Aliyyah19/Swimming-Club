@@ -1,0 +1,45 @@
+/* Contact Section */
+.contact {
+    background-color: rgb(96, 177, 204);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.contact-content h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Chewy', serif;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgb(61, 60, 60);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-icons div img {
+    width: 80px;
+    /* Adjust size of icons */
+    height: 80px;
+    /* Make them square */
+    border-radius: 50%;
+    /* Optional: makes icons circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.contact-icons div img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}

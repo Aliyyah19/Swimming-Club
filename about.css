@@ -137,15 +137,36 @@
     border-radius: 2rem;
 }
 
-.achievement img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 3rem;
-    align-items: center;
-    margin: 0 auto;
-    display: block;
-    padding: 2rem;
+/* Slider Container */
+.image-slider2 {
+    position: relative;
+    max-width: 70%;
+    padding-top: 2rem;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+   
 }
+
+/* Slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure all images have the same rectangular size */
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 
 

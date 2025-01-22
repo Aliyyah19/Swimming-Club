@@ -126,6 +126,11 @@ nav {
     transition: transform 0.3s ease;
 }
 
+.hamburger:hover span {
+    background: rgb(9, 84, 109);
+    transform: scale(1.1);
+}
+
 /* Media Query for Mobile Screens */
 @media screen and (max-width: 900px) {
 
@@ -247,13 +252,10 @@ nav {
     box-sizing: border-box;
 }
 
-/* Ensure all images have the same rectangular size */
 .slide img {
     width: 100%;
     height: 300px;
-    /* Adjust this value for the desired height */
     object-fit: cover;
-    /* Ensures images cover the area without distortion */
     border-radius: 10px;
 }
 
