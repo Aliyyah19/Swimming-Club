@@ -1,0 +1,27 @@
+/* Intro Section */
+
+.intro {
+    background-color: rgb(96, 177, 204);
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.intro h1,
+.vision h1,
+.mission h1 {
+    color: #f4f5f5;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-family: 'Chewy', serif;
+}
+
+/* Vision & Mission Section */
+
+.vision,
+.mission {
+    background-color: rgb(96, 177, 204);
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
