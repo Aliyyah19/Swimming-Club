@@ -62,6 +62,7 @@ body {
     background-color: rgb(20, 156, 201);
     transform: scale(1.2);
 }
+
 /* Header */
 .main-header {
     background: white;
@@ -73,7 +74,7 @@ body {
     z-index: 1000;
 }
 
-/* Navbar Container */
+/* Navbar  */
 nav {
     display: flex;
     justify-content: space-between;
@@ -82,13 +83,11 @@ nav {
     margin: 0 auto;
 }
 
-/* Logo */
 .logo img {
     max-width: 150px;
     height: auto;
 }
 
-/* Navbar List */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -98,7 +97,6 @@ nav {
     transition: max-height 0.3s ease-in-out;
 }
 
-/* Navbar Links */
 .navbar a {
     text-decoration: none;
     font-weight: bold;
@@ -157,7 +155,8 @@ nav {
         display: block;
         width: 100%;
         text-align: left;
-        padding: 0.7rem 1rem;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
         border: 0;
     }
 
@@ -181,7 +180,7 @@ nav {
 
 .hero-section h1 {
     color: #f4f5f5;
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
     font-family: 'Chewy', serif;
 }
@@ -362,19 +361,27 @@ footer {
 
 /* Intro Section */
 
-.intro-section {
+.intro {
+    background-color: rgb(96, 177, 204);
+    padding: 4rem 2rem;
     margin-top: 4rem;
     text-align: center;
 }
 
-.intro-section h1 {
+.intro h1, .vision h1,
+.mission h1 {
     color: #f4f5f5;
     font-size: 5rem;
     margin-bottom: 1rem;
     font-family: 'Chewy', serif;
 }
 
-.intro-section p {
-    color: #c8e7ea;
-    margin-bottom: 2rem;
+/* Vision & Mission Section */
+
+.vision,
+.mission {
+    background-color: rgb(96, 177, 204);
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
 }
