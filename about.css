@@ -1,4 +1,5 @@
 /* Intro Section */
+
 .intro {
     background-color: rgb(96, 177, 204);
     text-align: center;
@@ -12,10 +13,9 @@
     font-family: 'Chewy', serif;
 }
 
-/* Intro Content */
 .intro-content {
     background-color: rgb(17, 111, 143);
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     margin-top: 5rem;
@@ -23,7 +23,6 @@
     padding: 2rem;
 }
 
-/* Intro Text */
 .intro-text {
     padding: 3rem 2rem;
     flex: 1;
@@ -32,7 +31,6 @@
     text-align: left;
 }
 
-/* Intro Image */
 .intro-image {
     flex: 1;
     padding: 1rem 1rem;
@@ -50,27 +48,21 @@
 @media screen and (max-width: 768px) {
     .intro-content {
         flex-direction: column;
-        /* Stack text and image vertically */
         align-items: center;
-        /* Center align both elements */
     }
 
     .intro-text {
         text-align: center;
-        /* Center align text on smaller screens */
         padding: 2rem 1rem;
-        /* Adjust padding for smaller screens */
     }
 
     .intro-image img {
         max-width: 90%;
-        /* Increase image size for small screens */
         margin-top: 2rem;
-        /* Add space between text and image */
     }
 }
 
-/* Vision & Mission  */
+/* Vision & Mission Section */
 
 .vm {
     display: flex; 
@@ -82,7 +74,6 @@
     padding: 1rem;
 }
 
-/* Individual Sections */
 .vision,
 .mission {
     flex: 1; 
@@ -92,13 +83,12 @@
     background-color: white;
     color: black;
     padding: 2rem;
-    border-radius: 10px; 
+    border-radius: 1rem; 
     text-align: center; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     min-height: 200px; 
 }
 
-/* Headings */
 .vision h1,
 .mission h1 {
     font-family: 'Chewy', serif;
@@ -107,7 +97,6 @@
     color: rgb(96, 177, 204);
 }
 
-/* Paragraph Text */
 .vision p,
 .mission p {
     font-size: 1.5rem;
@@ -127,4 +116,36 @@
         min-height: unset; 
     }
 }
+
+/* Achievement Section */
+
+.achievement {
+    background-color: rgb(17, 111, 143);
+    padding: 2rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    margin: 2rem ;
+    text-align: center;
+}
+
+.achievement h1 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-family: "Chewy", serif;
+    border-radius: 2rem;
+}
+
+.achievement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3rem;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem;
+}
+
+
 
