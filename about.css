@@ -2,26 +2,79 @@
 
 .intro {
     background-color: rgb(96, 177, 204);
-    padding: 4rem 2rem;
-    margin-top: 4rem;
     text-align: center;
 }
 
-.intro h1,
-.vision h1,
-.mission h1 {
+.intro h1 {
     color: #f4f5f5;
     font-size: 5rem;
-    margin-bottom: 1rem;
     font-family: 'Chewy', serif;
+}
+
+.intro-content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; 
+    margin-top: 2rem;
+}
+
+.intro-text {
+    padding: 3rem 2rem;
+    flex: 1; 
+    text-align: left; 
+    color: white;
+    font-size: 1.2rem;
+}
+
+.intro-image {
+    flex: 1; 
+    text-align: right;
+}
+
+.intro-image img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Responsive Design: Image Moves Below Text */
+@media screen and (max-width: 768px) {
+    .intro-content {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .intro-text {
+        margin-top: 4rem;
+        text-align: center; 
+        padding: 1rem; 
+    }
+
+    .intro-image {
+        text-align: center; 
+    }
+
+    .intro-image img {
+        max-width: 90%; 
+        height: auto; 
+    }
 }
 
 /* Vision & Mission Section */
 
 .vision,
 .mission {
-    background-color: rgb(96, 177, 204);
-    padding: 2rem 2rem;
-    margin-top: 2rem;
+    background-color: white;
+
+
     text-align: center;
+}
+
+.vision h1,
+.mission h1 {
+    color: #f4f5f5;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-family: 'Chewy', serif;
 }

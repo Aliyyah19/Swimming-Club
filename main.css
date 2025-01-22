@@ -175,6 +175,7 @@ nav {
 /* Hero Section */
 .hero-section {
     margin-top: 4rem;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -190,7 +191,7 @@ nav {
     margin-bottom: 2rem;
 }
 
-.hero-section .hero-image img {
+.hero-image img {
     max-width: 100%;
     height: auto;
     margin-top: 2rem;
@@ -199,18 +200,14 @@ nav {
 }
 
 /* About Us & Membership Sections */
-section {
-    padding: 4rem 2rem;
-    text-align: center;
-}
 
 .aboutus,
 .membership {
+    padding: 2rem 2rem;
     background: white;
     margin: 3rem 3rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 2rem;
     text-align: center;
 }
 
