@@ -174,7 +174,7 @@ nav {
 
 /* Hero Section */
 .hero-section {
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding: 2rem;
     text-align: center;
 }
@@ -229,6 +229,7 @@ nav {
 .image-slider {
     position: relative;
     max-width: 70%;
+    padding-top: 2rem;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -246,11 +247,14 @@ nav {
     box-sizing: border-box;
 }
 
+/* Ensure all images have the same rectangular size */
 .slide img {
-    border-radius: 120px;
     width: 100%;
-    height: auto;
-    padding: 5rem;
+    height: 300px;
+    /* Adjust this value for the desired height */
+    object-fit: cover;
+    /* Ensures images cover the area without distortion */
+    border-radius: 10px;
 }
 
 /* Navigation Buttons */
