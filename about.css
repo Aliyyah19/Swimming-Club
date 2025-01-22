@@ -1,8 +1,9 @@
 /* Intro Section */
-
 .intro {
     background-color: rgb(96, 177, 204);
     text-align: center;
+    padding: 4rem 2rem;
+    padding-bottom: 0;
 }
 
 .intro h1 {
@@ -11,70 +12,119 @@
     font-family: 'Chewy', serif;
 }
 
+/* Intro Content */
 .intro-content {
-    display: flex; 
-    justify-content: space-between;
+    background-color: rgb(17, 111, 143);
+    border-radius: 2rem;
+    display: flex;
     align-items: center;
-    gap: 1rem; 
-    margin-top: 2rem;
+    margin-top: 5rem;
+    gap: 2rem;
+    padding: 2rem;
 }
 
+/* Intro Text */
 .intro-text {
     padding: 3rem 2rem;
-    flex: 1; 
-    text-align: left; 
+    flex: 1;
     color: white;
     font-size: 1.2rem;
+    text-align: left;
 }
 
+/* Intro Image */
 .intro-image {
-    flex: 1; 
-    text-align: right;
-}
-
-.intro-image img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-/* Responsive Design: Image Moves Below Text */
-@media screen and (max-width: 768px) {
-    .intro-content {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
-    }
-
-    .intro-text {
-        margin-top: 4rem;
-        text-align: center; 
-        padding: 1rem; 
-    }
-
-    .intro-image {
-        text-align: center; 
-    }
-
-    .intro-image img {
-        max-width: 90%; 
-        height: auto; 
-    }
-}
-
-/* Vision & Mission Section */
-
-.vision,
-.mission {
-    background-color: white;
-
-
+    flex: 1;
+    padding: 1rem 1rem;
     text-align: center;
 }
 
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design: Adjust Layout for Small Screens */
+@media screen and (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+        /* Stack text and image vertically */
+        align-items: center;
+        /* Center align both elements */
+    }
+
+    .intro-text {
+        text-align: center;
+        /* Center align text on smaller screens */
+        padding: 2rem 1rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .intro-image img {
+        max-width: 90%;
+        /* Increase image size for small screens */
+        margin-top: 2rem;
+        /* Add space between text and image */
+    }
+}
+
+/* Vision & Mission  */
+
+.vm {
+    display: flex; 
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 3rem;
+    margin: 2rem auto; 
+    max-width: 1200px; 
+    padding: 1rem;
+}
+
+/* Individual Sections */
+.vision,
+.mission {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    min-height: 200px; 
+}
+
+/* Headings */
 .vision h1,
 .mission h1 {
-    color: #f4f5f5;
+    font-family: 'Chewy', serif;
     font-size: 5rem;
     margin-bottom: 1rem;
-    font-family: 'Chewy', serif;
+    color: rgb(96, 177, 204);
 }
+
+/* Paragraph Text */
+.vision p,
+.mission p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design: Stacked Layout */
+@media screen and (max-width: 768px) {
+    .v-and-m {
+        flex-direction: column; 
+    }
+
+    .vision,
+    .mission {
+        flex: unset; 
+        width: 100%; 
+        min-height: unset; 
+    }
+}
+
